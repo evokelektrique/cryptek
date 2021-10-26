@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild ./src/cryptek.js --bundle --outfile=./dist/cryptek.js",
+    "start": "node ./dist/cryptek.js"
   },
   "keywords": [
     "Cryptography"
   ],
   "author": "EVOKE",
-  "license": "AGPL-3.0-or-later"
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "esbuild": "^0.13.9"
+  }
 }
